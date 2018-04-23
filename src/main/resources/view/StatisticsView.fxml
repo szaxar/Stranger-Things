@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ST3.presenter.StatisticsPresenter">
+   <children>
+      <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="19.0" prefWidth="600.0">
+         <children>
+             <Label prefHeight="17.0" prefWidth="65.0" text="Max Hp: " />
+             <Label fx:id="maxHpLabel" prefHeight="17.0" prefWidth="38.0" text="Value1" />
+             <Label prefHeight="17.0" prefWidth="65.0" text="Max Mp: " />
+             <Label fx:id="maxMpLabel" prefHeight="17.0" prefWidth="38.0" text="Value1" />
+             <Label prefHeight="17.0" prefWidth="65.0" text="Agro: " />
+             <Label fx:id="agroLabel" prefHeight="17.0" prefWidth="38.0" text="Value1" />
+             <Label prefHeight="17.0" prefWidth="65.0" text="Morale: " />
+             <Label fx:id="moraleLabel" prefHeight="17.0" prefWidth="38.0" text="Value1" />
+             <Label prefHeight="17.0" prefWidth="65.0" text="Attack: " />
+             <Label fx:id="attackLabel" prefHeight="17.0" prefWidth="38.0" text="Value1" />
+             <Label prefHeight="17.0" prefWidth="65.0" text="Defence: " />
+             <Label fx:id="defenceLabel" prefHeight="17.0" prefWidth="38.0" text="Value1" />
+         </children>
+      </HBox>
+   </children>
+</Pane>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.Group?>
+
+<TabPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ST3.presenter.map.MapListPresenter">
+   <tabs>
+      <Tab closable="false" text="Map models">
+         <content>
+            <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="300.0" prefWidth="400.0">
+               <center>
+                  <ListView fx:id="savedMapList" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                     </BorderPane.margin>
+                  </ListView>
+               </center>
+               <right>
+                  <VBox alignment="TOP_CENTER" spacing="8.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#onCreate" text="Create" />
+                        <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#onEdit" text="Edit">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#onDelete" text="Delete" />
+                        <Button mnemonicParsing="false" onAction="#onGameStart" text="Play">
+                           <VBox.margin>
+                              <Insets top="16.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                     <padding>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                     </padding>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </VBox>
+               </right>
+            </BorderPane>
+         </content>
+      </Tab>
+      <Tab closable="false" text="Saved games">
+         <content>
+            <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="300.0" prefWidth="400.0">
+               <center>
+                  <ListView fx:id="savedGameList" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                     </BorderPane.margin>
+                  </ListView>
+               </center>
+               <right>
+                  <VBox alignment="TOP_CENTER" spacing="8.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#onGameResume" text="Resume" />
+                        <Button mnemonicParsing="false" onAction="#onGameDelete" text="Delete" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                     </padding>
+                  </VBox>
+               </right>
+            </BorderPane>
+         </content>
+      </Tab>
+   </tabs>
+</TabPane>
